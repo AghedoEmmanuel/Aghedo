@@ -10,7 +10,7 @@ import Link from "next/link";
 export const HeroSection = () => {
   return (
     <div
-      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+      className="py-32 md:py-48 lg:py-60 relative z-10 overflow-x-clip"
       id="home"
     >
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
@@ -107,7 +107,7 @@ export const HeroSection = () => {
         </HeroOrbit>
       </div>
 
-      <div className="container">
+      <div className="container relative z-20">
         <div className="flex flex-col items-center">
           <Image
             src={memojiImage}
@@ -137,11 +137,11 @@ export const HeroSection = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8">
           <Link
-            href={"#work"}
+            href={"#works"}
             className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
           >
             <span className="font-semibold">Explore My Work</span>
-            <span>
+            <span className="animate-bounce">
               <ArrowDown className="size-4" />
             </span>
           </Link>
